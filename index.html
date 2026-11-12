@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Ujian 2027 - SMKN 4 Tangerang</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0b132b;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .login-card {
+            background-color: #1c2541;
+            border: 1px solid #3a506b;
+            border-radius: 16px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .logo-container {
+            width: 70px;
+            height: 70px;
+            background: #ffffff;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .logo-container img {
+            width: 50px;
+            height: auto;
+        }
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #172554;
+            color: #60a5fa;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 14px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            border: 1px solid #3b82f6;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 14px 15px 14px 45px;
+            background-color: #0b132b;
+            border: 1px solid #3a506b;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .input-group input:focus {
+            border-color: #3b82f6;
+        }
+        .input-group .icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            font-size: 16px;
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: opacity 0.3s;
+        }
+        .btn-submit:hover {
+            opacity: 0.9;
+        }
+        .footer-text {
+            margin-top: 30px;
+            font-size: 11px;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="logo-container">
+            <!-- Ganti src dengan link logo SMKN 4 Tangerang atau biarkan placeholder -->
+            <img src="https://i.ibb.co/3W6m6K2/smkn4.png" alt="Logo SMKN 4" onerror="this.style.display='none'">
+        </div>
+        
+        <h1>Penilaian Sumatif Kenaikan Kelas</h1>
+        <div class="badge">TAHUN AJARAN 2026/2027</div>
+
+        <form action="masuk-ujian.html" method="POST">
+            <div class="input-group">
+                <span class="icon">📄</span>
+                <input type="text" placeholder="Nomor Induk Siswa Nasional (NISN)" required>
+            </div>
+            
+            <div class="input-group">
+                <span class="icon">🔒</span>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Mulai Sesi Ujian &rarr;</button>
+        </form>
+
+        <div class="footer-text">
+            &copy; 2026 SMKN 4 Tangerang<br>
+            by siÇasep
+        </div>
+    </div>
+
+</body>
+</html>
